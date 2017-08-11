@@ -39,7 +39,7 @@ export default class Home extends React.Component {
                          value={this.props.user.description}
                 />
           </FormGroup>
-          <Button bsStyle="info" onClick={this.props.createUser.bind(this, this.props.user)}>createUser</Button>
+          <Button bsStyle="info" onClick={this.props.setUser.bind(this)}>createUser</Button>
           <br/><br/><br/>
           <Table striped bordered>
             <thead>

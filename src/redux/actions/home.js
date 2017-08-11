@@ -5,6 +5,13 @@ export const handleUserTmpChange = (user) => {
   }
 }
 
+export function setUser() {
+  return (dispatch, state) => {
+    dispatch(createUser(state().home.user))
+    dispatch(handleUserTmpChange({}))
+  }
+}
+
 export const createUser = (user) => {
   return {
     type: 'CREATE_USER',

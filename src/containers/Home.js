@@ -1,7 +1,7 @@
 import { connect } from 'react-redux'
 
 import Home from '../components/Home.js'
-import {handleUserTmpChange, createUser} from '../redux/actions/home.js'
+import {handleUserTmpChange, setUser} from '../redux/actions/home.js'
 
 const mapStateToProps = (state, ownProps) => {
   return {
@@ -15,8 +15,8 @@ const mapDispatchToProps = (dispatch, ownProps) => {
     handleUserTmpChange: (user) => {
       dispatch(handleUserTmpChange(user))
     },
-    createUser: (user) => {
-      dispatch(createUser(user))
+    setUser: (user) => {
+      dispatch(setUser(user))
     }
   }
 }
